@@ -1,6 +1,5 @@
 # Task Manager
-    #### Video Demo:  <https://youtu.be/whjKKie2GSI>
-    #### Description: My CS50 Computer Science project is little game of flashcard, with learning twist, which helps people who learn Georgian language learn and revise words they have learnt or are learning.
+    #### Description: My project is little game of flashcard, with learning twist, which helps people who learn Georgian language learn and revise words they have learnt or are learning.
 
     #### The users have 4 option to choose from and only one is correct answer. The sequence of the option words are always random, so that correct answer will be in the different positions every time.
 
