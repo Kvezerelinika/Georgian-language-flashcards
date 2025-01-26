@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Recipes
+{% endblock %}
+
+{% block main %}
+<div class="card text-bg-success mb-3 custom-style">
+    <div class="card-header">Category: {{ category }}</div>
+        <div class="card-body">
+            <h5 class="card-title">{{ name }}</h5>
+                <p class="card-text">
+                    <p><strong>Ingredients: </strong> {{ ingredients }}</p>
+                    <p><strong>Instructions: </strong> {{ instructions }}</p>
+                    <p><strong>Preparation Time: </strong> {{ preparation_time }}</p>
+                    <p><strong>Cooking Time: </strong> {{ cooking_time }}</p>
+                </p>
+        </div>
+</div>
+<div class="d-flex justify-content-between">
+
+    <form method="POST">
+        <input type="hidden" name="id" value="{{ id }}">
+    {% if prev_recipe %}
+            <div>
+                <input type="hidden" name="direction" value="prev_recipe">
+                <button type="submit" class="btn btn-outline-secondary">Previous</button>
+            </div>
+    {% else %}
+                <button class="btn btn-outline-secondary" disabled>Previous</button>
+    {% endif %}
+    </form>
+
+    <form method="POST">
+        <input type="hidden" name="id" value="{{ id }}">
+            <div class="d-flex justify-content-between">
+            {% if next_recipe %}
+                <div>
+                    <input type="hidden" name="direction" value="next_recipe">
+                    <button type="submit" class="btn btn-outline-secondary">Next</button>
+                </div>
+            {% else %}
+                    <button class="btn btn-outline-secondary" disabled>Next</button>
+            {% endif %}
+            </div>
+    </form>
+</div>
+{% endblock %}

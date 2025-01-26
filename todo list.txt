@@ -1,0 +1,20 @@
+SQL file of words -- Done
+CSV File -- Partially Done
+
+Python file of logics -- Done
+
+Game: The flashcards need to show words in Georgian and show 4 options for answers, where one will be correct and 3 will be wrong, logic should be build so incorrect words will be imported from the SQL file and it should be always random and also it should change the positions of the words everytime and words it shows. After choosing the options it will be green if it is correct and red if it is incorrect. and after choosing one of the options flashcards turn around and shows the meaning and IPA.
+Levels: The players should be able to see waht level they are and continue from that word. Also players should be able to pick level they want to play.
+Categories: There are different categories and players should be able to pick one. including one with every word.
+Top Players: The logic should count point for correct answers. one correct answer one point, one wrong answer no change.
+Recipes: The recipes are shown after some random flashcards.
+
+HTML/CSS -- Done
+
+Pages:
+
+Flashcards;
+Recipes;
+About Georgia;
+Profile.
+

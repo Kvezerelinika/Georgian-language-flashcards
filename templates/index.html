@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Project
+{% endblock %}
+
+{% block main %}
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/_87854179_georgia_view.jpg.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/412924_w-1200_h-628_q-70_m-crop.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/tbilisi-picture.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <div class="card" id="history">
+    <div class="card-body">
+      <p>Georgia, a country at the crossroads of Eastern Europe and Western Asia, boasts a rich history that spans thousands of years. Nestled in the Caucasus region, Georgia’s strategic location has made it a cultural and geopolitical bridge between continents, shaping its unique identity and heritage.</p>
+      <b>Ancient Beginnings</b>
+      <p>The history of Georgia dates back to prehistoric times. Archaeological evidence suggests human habitation in the region as far back as the Paleolithic era. By the 2nd millennium BCE, tribes in the area had begun developing organized societies. The Colchian and Diaokhi cultures, flourishing in western and eastern Georgia respectively, laid the foundations of the country’s early civilization.</p>
+      <p>The kingdom of Colchis, referenced in Greek mythology as the land of the Golden Fleece, became well-known for its wealth and advanced metallurgy. Meanwhile, the Kingdom of Iberia (not to be confused with the Iberian Peninsula) emerged in the east around the 4th century BCE. Both kingdoms established trade relations with neighboring regions, facilitating cultural exchange and economic growth.</p>
+      <b>Roman and Byzantine Influence</b>
+      <p>By the 1st century BCE, Georgia’s proximity to powerful empires drew it into the orbit of the Roman Republic. The Romans exerted influence over Colchis, while Iberia managed to maintain relative autonomy under local rulers. Christianity began to take root in Georgia during this period, introduced by apostles and missionaries such as Saint Nino in the 4th century CE. By 337 CE, Iberia officially adopted Christianity as its state religion, becoming one of the first nations in the world to do so.</p>
+      <p>The adoption of Christianity had a profound impact on Georgian culture, fostering the development of unique art, architecture, and literature. The Byzantine Empire became a significant ally, offering cultural and military support. However, Georgia’s location also made it a frequent battleground for rival empires, including Persia and the Arab Caliphate.</p>
+      <b>The Golden Age</b>
+      <p>The medieval era marked a high point in Georgian history, often referred to as the Golden Age. Under the leadership of King David IV (David the Builder) in the 12th century, Georgia was unified and strengthened both politically and militarily. David’s reforms and victories against external threats laid the groundwork for a flourishing kingdom.</p>
+      <p>The reign of Queen Tamar (1184–1213) is often regarded as the zenith of Georgia’s Golden Age. Under her rule, Georgia expanded its territory, enhanced its cultural achievements, and established itself as a major power in the region. Georgian monasteries and churches flourished during this period, and the country’s literary masterpiece, "The Knight in the Panther’s Skin" by Shota Rustaveli, was written.</p>
+      <b>Mongol Invasions and Decline</b>
+      <p>The 13th and 14th centuries brought challenges as the Mongols invaded Georgia, undermining its unity and prosperity. Though Georgian rulers managed to resist complete subjugation, the invasions weakened the kingdom significantly. Subsequent invasions by Timur and internal divisions further eroded Georgia’s power.</p>
+      <p>By the late Middle Ages, Georgia had fragmented into smaller principalities. The weakening of centralized authority made the country vulnerable to external forces, including the Ottoman and Safavid Empires. Both empires vied for control over Georgia, dividing its territory and influencing its cultural and religious landscape.</p>
+      <b>Russian Annexation</b>
+      <p>In the late 18th century, King Erekle II sought Russian protection against the encroaching Ottoman and Persian Empires. This alliance eventually led to the annexation of Georgia by the Russian Empire in the early 19th century. By 1801, the Kingdom of Kartli-Kakheti was absorbed into Russia, and over the following decades, the rest of Georgia’s territories were brought under Russian control.</p>
+      <p>While Russian rule brought modernization in some areas, it also suppressed Georgian culture and autonomy. Resistance to Russification efforts fostered a strong sense of national identity, laying the groundwork for future independence movements.</p>
+      <b>The 20th Century: Independence and Soviet Era</b>
+      <p>Georgia briefly gained independence in 1918 following the collapse of the Russian Empire, establishing the Democratic Republic of Georgia. However, this independence was short-lived; in 1921, the Red Army invaded, and Georgia was incorporated into the Soviet Union as the Georgian Soviet Socialist Republic.</p>
+      <p>Under Soviet rule, Georgia underwent significant industrialization and urbanization. However, Stalin—himself a Georgian—oversaw harsh policies that led to political purges and widespread repression. Despite this, Georgian culture persevered, and resistance to Soviet policies grew, particularly in the late 20th century.</p>
+      <b>Modern Independence</b>
+      <p>In 1991, following the dissolution of the Soviet Union, Georgia declared independence. The early years of independence were marked by political instability, economic struggles, and conflicts, including a civil war and separatist movements in Abkhazia and South Ossetia.</p>
+      <p>In the 2000s, Georgia underwent significant reforms under President Mikheil Saakashvili, modernizing its economy and infrastructure. However, tensions with Russia culminated in the 2008 Russo-Georgian War, which resulted in the loss of Georgian control over Abkhazia and South Ossetia.</p>
+      <b>Contemporary Georgia</b>
+      <p>Today, Georgia is a parliamentary democracy striving to integrate with Western institutions such as the European Union and NATO. The country’s rich cultural heritage, stunning landscapes, and vibrant traditions make it a unique and resilient nation. Despite challenges, Georgia’s history of survival and adaptation continues to inspire its people as they look toward the future.</p>
+    </div>
+  </div>
+{% endblock %}

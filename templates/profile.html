@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+<div class="main_profile">
+
+    <!-- User Info Section (Centered) -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <h2><b>Welcome, {{ username }}</b></h2>
+        <p style="font-size: 20px; font-weight: bold;">Points: {{ points }} | Level: {{ current_level }}</p>
+    </div>
+
+        <!-- Username and mail Section -->
+        <div style="text-align: left; margin-bottom: 20px;">
+            <p><b>Username:</b> {{ username }}</p>
+            <p><b>Email:</b> {{ email }}</p>
+        </div>
+
+    <!-- Form to Update User Info -->
+    <form action="/profile" method="post">
+
+        <!-- Username Section -->
+        <div class="update_field">
+            <span class="clickable-text" onclick="toggleDiv('username')">Update username</span>
+            <div class="update_div" id="username" style="display: none;">
+                <label class="form-label" for="username"></label>
+                <input class="form-control" type="text" id="username" name="username" placeholder="Update username" required>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Form to Update User Info -->
+    <form action="/profile" method="post">
+        <!-- Email Section -->
+        <div class="update_field">
+            <span class="clickable-text" onclick="toggleDiv('email')">Update Email</span>
+            <div class="update_div" id="email" style="display: none;">
+                <label class="form-label" for="email"></label>
+                <input class="form-control" type="text" id="email" name="email" placeholder="Update email" required>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Form to Update User Info -->
+    <form action="/profile" method="post">
+
+        <!-- Password Section -->
+        <div class="update_field">
+            <span class="clickable-text" onclick="toggleDiv('password')">Update Password</span>
+            <div class="update_div" id="password" style="display: none;">
+                <label class="form-label" for="password"></label>
+                <input class="form-control" type="password" id="old_password" name="old_password" placeholder="Old password" required>
+                <input class="form-control" type="password" id="new_password" name="new_password" placeholder="New password" required>
+                <input class="form-control" type="password" id="repeat_password" name="repeat_password" placeholder="Repeat password" required>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+    <script>
+        function toggleDiv(divId) {
+            // Get the div by its ID
+            var div = document.getElementById(divId);
+
+            // Toggle visibility
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "block";  // Show the div
+            } else {
+                div.style.display = "none";   // Hide the div
+            }
+        }
+    </script>
+{% endblock %}

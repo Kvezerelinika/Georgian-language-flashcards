@@ -1,0 +1,172 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+
+}
+
+table.mb-3
+{
+    background-color: #f2f2f2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.next2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    margin: auto;
+
+}
+
+.card-header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+}
+
+.button label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    display: inline-block;
+}
+
+.btn-dark {
+    margin-top: 15px;
+}
+
+.button_2:hover {
+    background-color: #0056b3;
+}
+
+.flashcard-container {
+    display: flex;
+    justify-content: center;   /* Centers the flashcard horizontally */
+    align-items: center;       /* Centers the flashcard vertically */
+    height: 20vh;             /* Ensures the container takes full viewport height */
+    margin: 0;                 /* Removes default margin */
+}
+
+.flashcard {
+    width: 25rem; /* Set the width directly to 15rem for smaller flashcards */
+    height: 150px; /* Adjust the height if necessary */
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
+    cursor: pointer;
+
+}
+
+.flashcard .front,
+.flashcard .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flashcard .front {
+    background-color: #007bff;
+    color: white;
+}
+
+.flashcard .back {
+    background-color: #28a745;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flashcard.flipped {
+    transform: rotateY(180deg);
+}
+
+.custom-style {
+    max-width: 150rem;
+    max-height: 100rem;
+    height: 40vh;
+}
+
+.update_field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.clickable-text {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.update_div {
+    margin-top: 10px;
+}
+
+.form-control {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.main_profile {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#history {
+    height: 185vh;
+    margin: auto;
+    text-align: left;
+}
