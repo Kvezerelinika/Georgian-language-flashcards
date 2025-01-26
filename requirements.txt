@@ -1,0 +1,8 @@
+flask
+cs50
+sqlite3
+csv
+flask_session
+random
+functools
+werkzeug.security
